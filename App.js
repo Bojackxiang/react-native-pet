@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
+import AppSon from './AppSon';
 
 export default class App extends Component {
 
@@ -41,8 +42,7 @@ export default class App extends Component {
     console.log('render ')
     return (
       <View style={styles.container}>
-        <Text onPress={this.timePlus.bind(this)}> textInComponent </Text>
-        <Text> 点击次数：{this.state.clickTimes} </Text>
+        <AppSon/>
       </View>
     )
   }
